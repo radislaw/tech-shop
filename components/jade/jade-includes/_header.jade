@@ -1,0 +1,58 @@
+header.g-header
+    div.contacts-panel
+        div.container.clearfix
+            div.social-btn
+                ul.social-btn__list
+                    li.social-btn__item
+                        a(href="#").social-btn__link.facebook facebook
+                    li.social-btn__item
+                        a(href="#").social-btn__link.vk vk
+                    li.social-btn__item
+                        a(href="#").social-btn__link.twitter twitter
+
+
+                //Phone
+            div.phone
+                a(href = "tel:+792112312313").phone__link +7 (921) 123-12-13
+
+
+                //Location
+            span.location ул. Маяковского 6, офис 17
+
+
+    div.logo-panel
+        div.container.clearfix
+            //Logo
+            div.logo
+                a(href = "#").logo__link
+                    img(src = "img/logo.png").logo__img
+                    span.logo__text Cooltech
+
+
+                //Helpers
+            mixin helper(items)
+                div.helper
+                    ul.helper__list
+                        each item in items
+                            li.helper__item
+                                a(href="#").helper__link= item
+            +helper(["Карта проезда", "История заказов", "Корзина"])
+
+
+                //Search
+            div.search
+                input(type="text", placeholder="Что будем искать").search__field
+                input(type="submit", value="Найти").search__btn
+                div.nav-panel
+
+
+        //Navigation
+        mixin nav(items, activeIndex)
+            nav.nav
+                div.container
+                    ul.nav__list
+                        each item, index in items
+                            li(class="nav__item " + ((activeIndex == index) ? 'nav__item_active' : ''))
+                                a(href="#" class= "nav__link")= item
+        +nav(["Планшеты", "Мобильные телефоны", "Mp3 плееры", "Персональные компьютеры", "Ноутбуки", "Аксессуары", "Бытовая техника"], 1)
+            div.container.clearfix.crumbs-panel

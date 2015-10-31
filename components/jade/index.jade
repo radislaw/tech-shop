@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+html(lang="ru-RU")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title CoolTech catalog
+        // SEO
+        meta(name="description" content="CoolTech")
+        meta(name="keywords" content="")
+        meta(name="author" content="Radislaw Yalilow")
+        // favicon
+        link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
+        link(rel="icon", href="favicon.ico", type="image/x-icon")
+        // vendor CSS
+        link(rel="stylesheet", href="bower/normalize-css/normalize.css")
+        // fonts CSS
+        link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:100,400,600,700&subset=latin,cyrillic')
+        // custom CSS
+        link(rel="stylesheet", href="css/main.css")
+        // header js
+        script(src="bower/modernizr/modernizr.js")
+    body
+        <!--[if lt IE 8]>
+        <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
+        <![endif]-->
+        div.main-wrap
+            div.page-body.clearfix
+                include jade-includes/_header
+                        //Crumbs
+                //        include ../components/crumbs
+                //        +crumbs(["Главная", "Каталог"])
+                //            section.g-mainer.container
+                //    block content
+                //        footer.g-footer
+                //div.container.clearfix
+                //    include ../components/footer-logo
+                //    div.footer-right-column
+                //        include ../components/social-btn-large
+                //            include ../components/footer-navigation
+                //        +footer-nav(["Планшеты", "Мобильные телефоны", "Mp3 плееры", "Персональные компьютеры", "Ноутбуки", "Аксессуары", "Бытовая техника"])
+                //include ../components/copyright
+        // vendor js
+        script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+        script.
+            window.jQuery || document.write('<script src="/js/_vendors/jquery-1.11.3.min.js"><\/script>');
+        // custom js
+        script(src='js/plugins.min.js')
+        script(src="js/main.js")
