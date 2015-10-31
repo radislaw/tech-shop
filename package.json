@@ -2,9 +2,17 @@
   "name": "inet-shop",
   "version": "0.0.1",
   "description": "cooltech shop",
-  "repository":{
-    "type":"git",
-    "url":"https://github.com/radislaw/tech-shop.git"},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/radislaw/tech-shop.git"
+  },
   "main": "index.js",
-  "author": "Radislaw Yalilow"
+  "author": "Radislaw Yalilow",
+  "devDependencies": {
+    "browser-sync": "^2.9.11",
+    "gulp": "^3.9.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-jade": "^1.1.0",
+    "plumber": "^0.4.8"
+  }
 }
