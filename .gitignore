@@ -4,5 +4,4 @@ node_modules
 .tmp
 .sass-cache
 build/**/images/*
-.idea
-.idea/workspace.xml
+.idea/
