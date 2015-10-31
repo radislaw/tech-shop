@@ -1,0 +1,9 @@
+aside.l-sidebar
+    mixin price-toggle(items)
+        nav.price-toggle
+            ul.price-toggle__list
+                each item, index in items
+                    li.price-toggle__item
+                        a(href="#" class= "price-toggle__link")= item
+    +price-toggle(["Флагманы", "Бюджетная линейка"])
+    include accordeon/accordeon

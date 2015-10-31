@@ -1,0 +1,7 @@
+mixin colorpicker(colors)
+   div.colorpicker
+      ul.colorpicker__list
+         -var colors = colors
+         each item in colors
+            li.colorpicker__item
+               a(href="#", data-color=item).colorpicker__link

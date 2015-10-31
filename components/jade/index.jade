@@ -31,19 +31,17 @@ html(lang="ru-RU")
         div.main-wrap
             div.page-body.clearfix
                 include jade-includes/_header
-                        //Crumbs
-                //        include ../components/crumbs
-                //        +crumbs(["Главная", "Каталог"])
-                //            section.g-mainer.container
-                //    block content
-                //        footer.g-footer
-                //div.container.clearfix
-                //    include ../components/footer-logo
-                //    div.footer-right-column
-                //        include ../components/social-btn-large
-                //            include ../components/footer-navigation
-                //        +footer-nav(["Планшеты", "Мобильные телефоны", "Mp3 плееры", "Персональные компьютеры", "Ноутбуки", "Аксессуары", "Бытовая техника"])
-                //include ../components/copyright
+                div.container.clearfix.crumbs-panel
+                    mixin crumbs(items)
+                        div.crumbs
+                            ul.crumbs__list
+                                each item in items
+                                    li.crumbs__item
+                                        a(href="#").crumbs__link= item
+                    +crumbs(["Главная", "Каталог"])
+                include jade-includes/_main-content
+                include jade-includes/_footer
+
         // vendor js
         script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
         script.

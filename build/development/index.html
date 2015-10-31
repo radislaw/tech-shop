@@ -83,18 +83,936 @@
                         </nav>
           </div>
         </header>
-        <!--        include ../components/crumbs-->
-        <!--        +crumbs(["Главная", "Каталог"])-->
-        <!--            section.g-mainer.container-->
-        <!--    block content-->
-        <!--        footer.g-footer-->
-        <!--div.container.clearfix-->
-        <!--    include ../components/footer-logo-->
-        <!--    div.footer-right-column-->
-        <!--        include ../components/social-btn-large-->
-        <!--            include ../components/footer-navigation-->
-        <!--        +footer-nav(["Планшеты", "Мобильные телефоны", "Mp3 плееры", "Персональные компьютеры", "Ноутбуки", "Аксессуары", "Бытовая техника"])-->
-        <!--include ../components/copyright-->
+        <div class="container clearfix crumbs-panel">
+                    <div class="crumbs">
+                      <ul class="crumbs__list">
+                        <li class="crumbs__item"><a href="#" class="crumbs__link">Главная</a></li>
+                        <li class="crumbs__item"><a href="#" class="crumbs__link">Каталог</a></li>
+                      </ul>
+                    </div>
+        </div>
+        <section class="g-mainer container">
+          <div class="container clearfix">
+            <h1 class="page-title">Мобильные телефоны</h1>
+            <aside class="l-sidebar">
+                            <nav class="price-toggle">
+                              <ul class="price-toggle__list">
+                                <li class="price-toggle__item"><a href="#" class="price-toggle__link">Флагманы</a></li>
+                                <li class="price-toggle__item"><a href="#" class="price-toggle__link">Бюджетная линейка</a></li>
+                              </ul>
+                            </nav>
+              <div class="accordeon">
+                <ul class="accordeon__list">
+                  <li class="accordeon__item"><a class="accordeon__trigger">Наличие в магазинах</a>
+                    <div class="accordeon__item__toggle">
+                                            <div class="list-params list-params_radio">
+                                              <ul class="list-params__list">
+                                                <li class="list-params__item">
+                                                  <label class="list-params__label">
+                                                    <input type="radio" name="radioVal" class="list-params__input-origin"/>
+                                                    <div class="list-params__input-fake"></div>
+                                                    <div class="list-params__label-title">Во всех магазинах</div>
+                                                  </label>
+                                                </li>
+                                                <li class="list-params__item">
+                                                  <label class="list-params__label">
+                                                    <input type="radio" name="radioVal" class="list-params__input-origin"/>
+                                                    <div class="list-params__input-fake"></div>
+                                                    <div class="list-params__label-title">В ближайшем ко мне магазине</div>
+                                                  </label>
+                                                </li>
+                                              </ul>
+                                            </div>
+                    </div>
+                  </li>
+                  <li class="accordeon__item"><a class="accordeon__trigger">Бренды</a>
+                    <div class="accordeon__item__toggle">
+                                            <div class="list-params list-params_checkbox">
+                                              <ul class="list-params__list">
+                                                <li class="list-params__item">
+                                                  <label class="list-params__label">
+                                                    <input type="checkbox" class="list-params__input-origin"/>
+                                                    <div class="list-params__input-fake"></div>
+                                                    <div class="list-params__label-title">Lenovo</div>
+                                                  </label>
+                                                </li>
+                                                <li class="list-params__item">
+                                                  <label class="list-params__label">
+                                                    <input type="checkbox" class="list-params__input-origin"/>
+                                                    <div class="list-params__input-fake"></div>
+                                                    <div class="list-params__label-title">Apple</div>
+                                                  </label>
+                                                </li>
+                                                <li class="list-params__item">
+                                                  <label class="list-params__label">
+                                                    <input type="checkbox" class="list-params__input-origin"/>
+                                                    <div class="list-params__input-fake"></div>
+                                                    <div class="list-params__label-title">Samsung</div>
+                                                  </label>
+                                                </li>
+                                                <li class="list-params__item">
+                                                  <label class="list-params__label">
+                                                    <input type="checkbox" class="list-params__input-origin"/>
+                                                    <div class="list-params__input-fake"></div>
+                                                    <div class="list-params__label-title">Asus</div>
+                                                  </label>
+                                                </li>
+                                                <li class="list-params__item">
+                                                  <label class="list-params__label">
+                                                    <input type="checkbox" class="list-params__input-origin"/>
+                                                    <div class="list-params__input-fake"></div>
+                                                    <div class="list-params__label-title">Motorola</div>
+                                                  </label>
+                                                </li>
+                                              </ul>
+                                            </div><a class="reset-filter">Сбросить фильтр</a>
+                    </div>
+                  </li>
+                  <li class="accordeon__item"><a class="accordeon__trigger">Цена</a>
+                    <div class="accordeon__item__toggle">
+                                            <div class="range-slider">
+                                              <div class="range-slider__wrap-fields clearfix">
+                                                <div class="range-slider__field range-slider__field_start"><span class="range-slider__text">от</span>
+                                                  <input type="text" value="0" class="range-slider__input"/>
+                                                </div>
+                                                <div class="range-slider__field range-slider__field_end"><span class="range-slider__text">до</span>
+                                                  <input type="text" value="26000" class="range-slider__input"/>
+                                                </div>
+                                              </div>
+                                              <div class="range-slider__interval">
+                                                <div class="range-slider__range"></div>
+                                                <div class="range-slider__caret_start-wrap ui-slider-handle">
+                                                  <div class="range-slider__caret range-slider__caret_start"></div>
+                                                </div>
+                                                <div class="range-slider__caret_end-wrap ui-slider-handle">
+                                                  <div class="range-slider__caret range-slider__caret_end"></div>
+                                                </div>
+                                              </div>
+                                            </div>
+                    </div>
+                  </li>
+                  <li class="accordeon__item"><a class="accordeon__trigger">Цвет</a>
+                    <div class="accordeon__item__toggle">
+                                            <div class="colorpicker">
+                                              <ul class="colorpicker__list">
+                                                <li class="colorpicker__item"><a href="#" data-color="red" class="colorpicker__link"></a></li>
+                                                <li class="colorpicker__item"><a href="#" data-color="gray" class="colorpicker__link"></a></li>
+                                                <li class="colorpicker__item"><a href="#" data-color="black" class="colorpicker__link"></a></li>
+                                                <li class="colorpicker__item"><a href="#" data-color="dark-blue" class="colorpicker__link"></a></li>
+                                                <li class="colorpicker__item"><a href="#" data-color="red" class="colorpicker__link"></a></li>
+                                                <li class="colorpicker__item"><a href="#" data-color="yellow" class="colorpicker__link"></a></li>
+                                                <li class="colorpicker__item"><a href="#" data-color="orange" class="colorpicker__link"></a></li>
+                                                <li class="colorpicker__item"><a href="#" data-color="green" class="colorpicker__link"></a></li>
+                                                <li class="colorpicker__item"><a href="#" data-color="blue" class="colorpicker__link"></a></li>
+                                                <li class="colorpicker__item"><a href="#" data-color="purple" class="colorpicker__link"></a></li>
+                                                <li class="colorpicker__item"><a href="#" data-color="pink" class="colorpicker__link"></a></li>
+                                                <li class="colorpicker__item"><a href="#" data-color="brown" class="colorpicker__link"></a></li>
+                                              </ul>
+                                            </div>
+                    </div>
+                  </li>
+                  <li class="accordeon__item"><a class="accordeon__trigger">Операционные</a>
+                    <div class="accordeon__item__toggle">
+                                            <div class="list-params list-params_checkbox">
+                                              <ul class="list-params__list">
+                                                <li class="list-params__item">
+                                                  <label class="list-params__label">
+                                                    <input type="checkbox" class="list-params__input-origin"/>
+                                                    <div class="list-params__input-fake"></div>
+                                                    <div class="list-params__label-title">Android</div>
+                                                  </label>
+                                                </li>
+                                                <li class="list-params__item">
+                                                  <label class="list-params__label">
+                                                    <input type="checkbox" class="list-params__input-origin"/>
+                                                    <div class="list-params__input-fake"></div>
+                                                    <div class="list-params__label-title">iOS</div>
+                                                  </label>
+                                                </li>
+                                                <li class="list-params__item">
+                                                  <label class="list-params__label">
+                                                    <input type="checkbox" class="list-params__input-origin"/>
+                                                    <div class="list-params__input-fake"></div>
+                                                    <div class="list-params__label-title">Windows Mobile</div>
+                                                  </label>
+                                                </li>
+                                                <li class="list-params__item">
+                                                  <label class="list-params__label">
+                                                    <input type="checkbox" class="list-params__input-origin"/>
+                                                    <div class="list-params__input-fake"></div>
+                                                    <div class="list-params__label-title">Symbian</div>
+                                                  </label>
+                                                </li>
+                                                <li class="list-params__item">
+                                                  <label class="list-params__label">
+                                                    <input type="checkbox" class="list-params__input-origin"/>
+                                                    <div class="list-params__input-fake"></div>
+                                                    <div class="list-params__label-title">Custom</div>
+                                                  </label>
+                                                </li>
+                                              </ul>
+                                            </div><a class="reset-filter">Сбросить фильтр</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </aside>
+            <aside class="l-sidebar">
+                            <nav class="price-toggle">
+                              <ul class="price-toggle__list">
+                                <li class="price-toggle__item"><a href="#" class="price-toggle__link">Флагманы</a></li>
+                                <li class="price-toggle__item"><a href="#" class="price-toggle__link">Бюджетная линейка</a></li>
+                              </ul>
+                            </nav>
+              <div class="accordeon">
+                <ul class="accordeon__list">
+                  <li class="accordeon__item"><a class="accordeon__trigger">Наличие в магазинах</a>
+                    <div class="accordeon__item__toggle">
+                                            <div class="list-params list-params_radio">
+                                              <ul class="list-params__list">
+                                                <li class="list-params__item">
+                                                  <label class="list-params__label">
+                                                    <input type="radio" name="radioVal" class="list-params__input-origin"/>
+                                                    <div class="list-params__input-fake"></div>
+                                                    <div class="list-params__label-title">Во всех магазинах</div>
+                                                  </label>
+                                                </li>
+                                                <li class="list-params__item">
+                                                  <label class="list-params__label">
+                                                    <input type="radio" name="radioVal" class="list-params__input-origin"/>
+                                                    <div class="list-params__input-fake"></div>
+                                                    <div class="list-params__label-title">В ближайшем ко мне магазине</div>
+                                                  </label>
+                                                </li>
+                                              </ul>
+                                            </div>
+                    </div>
+                  </li>
+                  <li class="accordeon__item"><a class="accordeon__trigger">Бренды</a>
+                    <div class="accordeon__item__toggle">
+                                            <div class="list-params list-params_checkbox">
+                                              <ul class="list-params__list">
+                                                <li class="list-params__item">
+                                                  <label class="list-params__label">
+                                                    <input type="checkbox" class="list-params__input-origin"/>
+                                                    <div class="list-params__input-fake"></div>
+                                                    <div class="list-params__label-title">Lenovo</div>
+                                                  </label>
+                                                </li>
+                                                <li class="list-params__item">
+                                                  <label class="list-params__label">
+                                                    <input type="checkbox" class="list-params__input-origin"/>
+                                                    <div class="list-params__input-fake"></div>
+                                                    <div class="list-params__label-title">Apple</div>
+                                                  </label>
+                                                </li>
+                                                <li class="list-params__item">
+                                                  <label class="list-params__label">
+                                                    <input type="checkbox" class="list-params__input-origin"/>
+                                                    <div class="list-params__input-fake"></div>
+                                                    <div class="list-params__label-title">Samsung</div>
+                                                  </label>
+                                                </li>
+                                                <li class="list-params__item">
+                                                  <label class="list-params__label">
+                                                    <input type="checkbox" class="list-params__input-origin"/>
+                                                    <div class="list-params__input-fake"></div>
+                                                    <div class="list-params__label-title">Asus</div>
+                                                  </label>
+                                                </li>
+                                                <li class="list-params__item">
+                                                  <label class="list-params__label">
+                                                    <input type="checkbox" class="list-params__input-origin"/>
+                                                    <div class="list-params__input-fake"></div>
+                                                    <div class="list-params__label-title">Motorola</div>
+                                                  </label>
+                                                </li>
+                                              </ul>
+                                            </div><a class="reset-filter">Сбросить фильтр</a>
+                    </div>
+                  </li>
+                  <li class="accordeon__item"><a class="accordeon__trigger">Цена</a>
+                    <div class="accordeon__item__toggle">
+                                            <div class="range-slider">
+                                              <div class="range-slider__wrap-fields clearfix">
+                                                <div class="range-slider__field range-slider__field_start"><span class="range-slider__text">от</span>
+                                                  <input type="text" value="0" class="range-slider__input"/>
+                                                </div>
+                                                <div class="range-slider__field range-slider__field_end"><span class="range-slider__text">до</span>
+                                                  <input type="text" value="26000" class="range-slider__input"/>
+                                                </div>
+                                              </div>
+                                              <div class="range-slider__interval">
+                                                <div class="range-slider__range"></div>
+                                                <div class="range-slider__caret_start-wrap ui-slider-handle">
+                                                  <div class="range-slider__caret range-slider__caret_start"></div>
+                                                </div>
+                                                <div class="range-slider__caret_end-wrap ui-slider-handle">
+                                                  <div class="range-slider__caret range-slider__caret_end"></div>
+                                                </div>
+                                              </div>
+                                            </div>
+                    </div>
+                  </li>
+                  <li class="accordeon__item"><a class="accordeon__trigger">Цвет</a>
+                    <div class="accordeon__item__toggle">
+                                            <div class="colorpicker">
+                                              <ul class="colorpicker__list">
+                                                <li class="colorpicker__item"><a href="#" data-color="red" class="colorpicker__link"></a></li>
+                                                <li class="colorpicker__item"><a href="#" data-color="gray" class="colorpicker__link"></a></li>
+                                                <li class="colorpicker__item"><a href="#" data-color="black" class="colorpicker__link"></a></li>
+                                                <li class="colorpicker__item"><a href="#" data-color="dark-blue" class="colorpicker__link"></a></li>
+                                                <li class="colorpicker__item"><a href="#" data-color="red" class="colorpicker__link"></a></li>
+                                                <li class="colorpicker__item"><a href="#" data-color="yellow" class="colorpicker__link"></a></li>
+                                                <li class="colorpicker__item"><a href="#" data-color="orange" class="colorpicker__link"></a></li>
+                                                <li class="colorpicker__item"><a href="#" data-color="green" class="colorpicker__link"></a></li>
+                                                <li class="colorpicker__item"><a href="#" data-color="blue" class="colorpicker__link"></a></li>
+                                                <li class="colorpicker__item"><a href="#" data-color="purple" class="colorpicker__link"></a></li>
+                                                <li class="colorpicker__item"><a href="#" data-color="pink" class="colorpicker__link"></a></li>
+                                                <li class="colorpicker__item"><a href="#" data-color="brown" class="colorpicker__link"></a></li>
+                                              </ul>
+                                            </div>
+                    </div>
+                  </li>
+                  <li class="accordeon__item"><a class="accordeon__trigger">Операционные</a>
+                    <div class="accordeon__item__toggle">
+                                            <div class="list-params list-params_checkbox">
+                                              <ul class="list-params__list">
+                                                <li class="list-params__item">
+                                                  <label class="list-params__label">
+                                                    <input type="checkbox" class="list-params__input-origin"/>
+                                                    <div class="list-params__input-fake"></div>
+                                                    <div class="list-params__label-title">Android</div>
+                                                  </label>
+                                                </li>
+                                                <li class="list-params__item">
+                                                  <label class="list-params__label">
+                                                    <input type="checkbox" class="list-params__input-origin"/>
+                                                    <div class="list-params__input-fake"></div>
+                                                    <div class="list-params__label-title">iOS</div>
+                                                  </label>
+                                                </li>
+                                                <li class="list-params__item">
+                                                  <label class="list-params__label">
+                                                    <input type="checkbox" class="list-params__input-origin"/>
+                                                    <div class="list-params__input-fake"></div>
+                                                    <div class="list-params__label-title">Windows Mobile</div>
+                                                  </label>
+                                                </li>
+                                                <li class="list-params__item">
+                                                  <label class="list-params__label">
+                                                    <input type="checkbox" class="list-params__input-origin"/>
+                                                    <div class="list-params__input-fake"></div>
+                                                    <div class="list-params__label-title">Symbian</div>
+                                                  </label>
+                                                </li>
+                                                <li class="list-params__item">
+                                                  <label class="list-params__label">
+                                                    <input type="checkbox" class="list-params__input-origin"/>
+                                                    <div class="list-params__input-fake"></div>
+                                                    <div class="list-params__label-title">Custom</div>
+                                                  </label>
+                                                </li>
+                                              </ul>
+                                            </div><a class="reset-filter">Сбросить фильтр</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </aside>
+            <section class="l-main-content">
+              <div class="filters clearfix">
+                <div class="filter filter-select"><span class="filter__title">Сортировать по</span>
+                  <select class="filter__select">
+                    <option value="price" class="filter__select__option">по цене</option>
+                    <option value="rating" class="filter__select__option">по популярности</option>
+                  </select>
+                </div>
+              </div>
+              <div class="filter filter-view"><span class="filter__title">Вид каталога</span>
+                <ul class="view-list">
+                  <li class="view-list__item view-list__item_detailed"><a href="#" class="view-list__link"></a></li>
+                  <li class="view-list__item view-list__item_tile"><a href="#" class="view-list__link"></a></li>
+                  <li class="view-list__item view-list__item_list"><a href="#" class="view-list__link"></a></li>
+                </ul>
+              </div>
+                            <div class="cards-products clearfix">
+                              <div class="card-product clearfix">
+                                <div class="card-product__slider slider-product">
+                                  <div class="slider-product__wrap-main-img"><img src="img/phone-poster-1.jpg" class="slider-product__main-img"/></div>
+                                  <div class="slider-product__controls">
+                                    <ul class="slider-product__controls-list">
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-1.jpg" class="slider-product__controls-list__item__img"/></li>
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-2.jpg" class="slider-product__controls-list__item__img"/></li>
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-3.jpg" class="slider-product__controls-list__item__img"/></li>
+                                    </ul>
+                                  </div>
+                                  <div class="card-product__article article-product"><span class="article-product__text">Артикул</span><span class="article-product__value">285633</span></div>
+                                </div>
+                                <div class="card-product__description description-product">
+                                  <h2 class="description-product__title">Samsung GT-I9301I GALAXY S 3</h2>
+                                  <p class="description-product__text">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...</p>
+                                  <div class="description-product__options options-product">
+                                    <ul class="options-product__list">
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Тип SIM-карт</span><span class="options-product__item__value">Micro-SIM</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Количество SIM-карт</span><span class="options-product__item__value">66</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Цвет</span><span class="options-product__item__value">Белый</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">ОС</span><span class="options-product__item__value">Android</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Связь 3G</span><span class="options-product__item__value">Есть</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">4G(LTE)</span><span class="options-product__item__value">Нет</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">GPS-модуль</span><span class="options-product__item__value">Micro-SIM</span></div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="description-product__rating">
+                                    <ul class="description-product__rating__list">
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item"><a href="#" class="description-product__rating__link"></a></li>
+                                    </ul><span class="description-product__rating__value">4</span>
+                                  </div>
+                                </div>
+                                <div class="card-product__purchase purchase-product clearfix">
+                                  <div class="purchase-product__price">11 289</div>
+                                  <div class="purchase-product__buy">
+                                    <input type="submit" value="В корзину" class="purchase-product__in-basket"/>
+                                    <div class="purchase-product__wrap-availability"><span class="purchase-product__availability">В наличии</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card-product clearfix">
+                                <div class="card-product__slider slider-product">
+                                  <div class="slider-product__wrap-main-img"><img src="img/phone-poster-1.jpg" class="slider-product__main-img"/></div>
+                                  <div class="slider-product__controls">
+                                    <ul class="slider-product__controls-list">
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-1.jpg" class="slider-product__controls-list__item__img"/></li>
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-2.jpg" class="slider-product__controls-list__item__img"/></li>
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-3.jpg" class="slider-product__controls-list__item__img"/></li>
+                                    </ul>
+                                  </div>
+                                  <div class="card-product__article article-product"><span class="article-product__text">Артикул</span><span class="article-product__value">346789</span></div>
+                                </div>
+                                <div class="card-product__description description-product">
+                                  <h2 class="description-product__title">Samsung GT-I9301I GALAXY S 3</h2>
+                                  <p class="description-product__text">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...</p>
+                                  <div class="description-product__options options-product">
+                                    <ul class="options-product__list">
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Тип SIM-карт</span><span class="options-product__item__value">Micro-SIM</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Количество SIM-карт</span><span class="options-product__item__value">66</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Цвет</span><span class="options-product__item__value">Белый</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">ОС</span><span class="options-product__item__value">Android</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Связь 3G</span><span class="options-product__item__value">Есть</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">4G(LTE)</span><span class="options-product__item__value">Нет</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">GPS-модуль</span><span class="options-product__item__value">Micro-SIM</span></div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="description-product__rating">
+                                    <ul class="description-product__rating__list">
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item"><a href="#" class="description-product__rating__link"></a></li>
+                                    </ul><span class="description-product__rating__value">4</span>
+                                  </div>
+                                </div>
+                                <div class="card-product__purchase purchase-product clearfix">
+                                  <div class="purchase-product__price">11 289</div>
+                                  <div class="purchase-product__buy">
+                                    <input type="submit" value="В корзину" class="purchase-product__in-basket"/>
+                                    <div class="purchase-product__wrap-availability"><span class="purchase-product__availability">В наличии</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card-product clearfix">
+                                <div class="card-product__slider slider-product">
+                                  <div class="slider-product__wrap-main-img"><img src="img/phone-poster-1.jpg" class="slider-product__main-img"/></div>
+                                  <div class="slider-product__controls">
+                                    <ul class="slider-product__controls-list">
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-1.jpg" class="slider-product__controls-list__item__img"/></li>
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-2.jpg" class="slider-product__controls-list__item__img"/></li>
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-3.jpg" class="slider-product__controls-list__item__img"/></li>
+                                    </ul>
+                                  </div>
+                                  <div class="card-product__article article-product"><span class="article-product__text">Артикул</span><span class="article-product__value">123478</span></div>
+                                </div>
+                                <div class="card-product__description description-product">
+                                  <h2 class="description-product__title">Samsung</h2>
+                                  <p class="description-product__text">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...</p>
+                                  <div class="description-product__options options-product">
+                                    <ul class="options-product__list">
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Тип SIM-карт</span><span class="options-product__item__value">Micro-SIM</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Количество SIM-карт</span><span class="options-product__item__value">66</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Цвет</span><span class="options-product__item__value">Белый</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">ОС</span><span class="options-product__item__value">Android</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Связь 3G</span><span class="options-product__item__value">Есть</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">4G(LTE)</span><span class="options-product__item__value">Нет</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">GPS-модуль</span><span class="options-product__item__value">Micro-SIM</span></div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="description-product__rating">
+                                    <ul class="description-product__rating__list">
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item"><a href="#" class="description-product__rating__link"></a></li>
+                                    </ul><span class="description-product__rating__value">4</span>
+                                  </div>
+                                </div>
+                                <div class="card-product__purchase purchase-product clearfix">
+                                  <div class="purchase-product__price">11 289</div>
+                                  <div class="purchase-product__buy">
+                                    <input type="submit" value="В корзину" class="purchase-product__in-basket"/>
+                                    <div class="purchase-product__wrap-availability"><span class="purchase-product__availability">В наличии</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card-product clearfix">
+                                <div class="card-product__slider slider-product">
+                                  <div class="slider-product__wrap-main-img"><img src="img/phone-poster-1.jpg" class="slider-product__main-img"/></div>
+                                  <div class="slider-product__controls">
+                                    <ul class="slider-product__controls-list">
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-1.jpg" class="slider-product__controls-list__item__img"/></li>
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-2.jpg" class="slider-product__controls-list__item__img"/></li>
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-3.jpg" class="slider-product__controls-list__item__img"/></li>
+                                    </ul>
+                                  </div>
+                                  <div class="card-product__article article-product"><span class="article-product__text">Артикул</span><span class="article-product__value">132799</span></div>
+                                </div>
+                                <div class="card-product__description description-product">
+                                  <h2 class="description-product__title">Samsung</h2>
+                                  <p class="description-product__text">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...</p>
+                                  <div class="description-product__options options-product">
+                                    <ul class="options-product__list">
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Тип SIM-карт</span><span class="options-product__item__value">Micro-SIM</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Количество SIM-карт</span><span class="options-product__item__value">66</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Цвет</span><span class="options-product__item__value">Белый</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">ОС</span><span class="options-product__item__value">Android</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Связь 3G</span><span class="options-product__item__value">Есть</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">4G(LTE)</span><span class="options-product__item__value">Нет</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">GPS-модуль</span><span class="options-product__item__value">Micro-SIM</span></div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="description-product__rating">
+                                    <ul class="description-product__rating__list">
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item"><a href="#" class="description-product__rating__link"></a></li>
+                                    </ul><span class="description-product__rating__value">4</span>
+                                  </div>
+                                </div>
+                                <div class="card-product__purchase purchase-product clearfix">
+                                  <div class="purchase-product__price">11 289</div>
+                                  <div class="purchase-product__buy">
+                                    <input type="submit" value="В корзину" class="purchase-product__in-basket"/>
+                                    <div class="purchase-product__wrap-availability"><span class="purchase-product__availability">В наличии</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card-product clearfix">
+                                <div class="card-product__slider slider-product">
+                                  <div class="slider-product__wrap-main-img"><img src="img/phone-poster-1.jpg" class="slider-product__main-img"/></div>
+                                  <div class="slider-product__controls">
+                                    <ul class="slider-product__controls-list">
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-1.jpg" class="slider-product__controls-list__item__img"/></li>
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-2.jpg" class="slider-product__controls-list__item__img"/></li>
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-3.jpg" class="slider-product__controls-list__item__img"/></li>
+                                    </ul>
+                                  </div>
+                                  <div class="card-product__article article-product"><span class="article-product__text">Артикул</span><span class="article-product__value">753468</span></div>
+                                </div>
+                                <div class="card-product__description description-product">
+                                  <h2 class="description-product__title">Samsung GT-I9301I GALAXY S 3</h2>
+                                  <p class="description-product__text">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...</p>
+                                  <div class="description-product__options options-product">
+                                    <ul class="options-product__list">
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Тип SIM-карт</span><span class="options-product__item__value">Micro-SIM</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Количество SIM-карт</span><span class="options-product__item__value">66</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Цвет</span><span class="options-product__item__value">Белый</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">ОС</span><span class="options-product__item__value">Android</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Связь 3G</span><span class="options-product__item__value">Есть</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">4G(LTE)</span><span class="options-product__item__value">Нет</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">GPS-модуль</span><span class="options-product__item__value">Micro-SIM</span></div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="description-product__rating">
+                                    <ul class="description-product__rating__list">
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item"><a href="#" class="description-product__rating__link"></a></li>
+                                    </ul><span class="description-product__rating__value">4</span>
+                                  </div>
+                                </div>
+                                <div class="card-product__purchase purchase-product clearfix">
+                                  <div class="purchase-product__price">11 289</div>
+                                  <div class="purchase-product__buy">
+                                    <input type="submit" value="В корзину" class="purchase-product__in-basket"/>
+                                    <div class="purchase-product__wrap-availability"><span class="purchase-product__availability">В наличии</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card-product clearfix">
+                                <div class="card-product__slider slider-product">
+                                  <div class="slider-product__wrap-main-img"><img src="img/phone-poster-1.jpg" class="slider-product__main-img"/></div>
+                                  <div class="slider-product__controls">
+                                    <ul class="slider-product__controls-list">
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-1.jpg" class="slider-product__controls-list__item__img"/></li>
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-2.jpg" class="slider-product__controls-list__item__img"/></li>
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-3.jpg" class="slider-product__controls-list__item__img"/></li>
+                                    </ul>
+                                  </div>
+                                  <div class="card-product__article article-product"><span class="article-product__text">Артикул</span><span class="article-product__value">431264</span></div>
+                                </div>
+                                <div class="card-product__description description-product">
+                                  <h2 class="description-product__title">Samsung</h2>
+                                  <p class="description-product__text">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...</p>
+                                  <div class="description-product__options options-product">
+                                    <ul class="options-product__list">
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Тип SIM-карт</span><span class="options-product__item__value">Micro-SIM</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Количество SIM-карт</span><span class="options-product__item__value">66</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Цвет</span><span class="options-product__item__value">Белый</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">ОС</span><span class="options-product__item__value">Android</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Связь 3G</span><span class="options-product__item__value">Есть</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">4G(LTE)</span><span class="options-product__item__value">Нет</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">GPS-модуль</span><span class="options-product__item__value">Micro-SIM</span></div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="description-product__rating">
+                                    <ul class="description-product__rating__list">
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item"><a href="#" class="description-product__rating__link"></a></li>
+                                    </ul><span class="description-product__rating__value">4</span>
+                                  </div>
+                                </div>
+                                <div class="card-product__purchase purchase-product clearfix">
+                                  <div class="purchase-product__price">11 289</div>
+                                  <div class="purchase-product__buy">
+                                    <input type="submit" value="В корзину" class="purchase-product__in-basket"/>
+                                    <div class="purchase-product__wrap-availability"><span class="purchase-product__availability">В наличии</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card-product clearfix">
+                                <div class="card-product__slider slider-product">
+                                  <div class="slider-product__wrap-main-img"><img src="img/phone-poster-1.jpg" class="slider-product__main-img"/></div>
+                                  <div class="slider-product__controls">
+                                    <ul class="slider-product__controls-list">
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-1.jpg" class="slider-product__controls-list__item__img"/></li>
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-2.jpg" class="slider-product__controls-list__item__img"/></li>
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-3.jpg" class="slider-product__controls-list__item__img"/></li>
+                                    </ul>
+                                  </div>
+                                  <div class="card-product__article article-product"><span class="article-product__text">Артикул</span><span class="article-product__value">317895</span></div>
+                                </div>
+                                <div class="card-product__description description-product">
+                                  <h2 class="description-product__title">Samsung</h2>
+                                  <p class="description-product__text">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...</p>
+                                  <div class="description-product__options options-product">
+                                    <ul class="options-product__list">
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Тип SIM-карт</span><span class="options-product__item__value">Micro-SIM</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Количество SIM-карт</span><span class="options-product__item__value">66</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Цвет</span><span class="options-product__item__value">Белый</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">ОС</span><span class="options-product__item__value">Android</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Связь 3G</span><span class="options-product__item__value">Есть</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">4G(LTE)</span><span class="options-product__item__value">Нет</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">GPS-модуль</span><span class="options-product__item__value">Micro-SIM</span></div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="description-product__rating">
+                                    <ul class="description-product__rating__list">
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item"><a href="#" class="description-product__rating__link"></a></li>
+                                    </ul><span class="description-product__rating__value">4</span>
+                                  </div>
+                                </div>
+                                <div class="card-product__purchase purchase-product clearfix">
+                                  <div class="purchase-product__price">11 289</div>
+                                  <div class="purchase-product__buy">
+                                    <input type="submit" value="В корзину" class="purchase-product__in-basket"/>
+                                    <div class="purchase-product__wrap-availability"><span class="purchase-product__availability">В наличии</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card-product clearfix">
+                                <div class="card-product__slider slider-product">
+                                  <div class="slider-product__wrap-main-img"><img src="img/phone-poster-1.jpg" class="slider-product__main-img"/></div>
+                                  <div class="slider-product__controls">
+                                    <ul class="slider-product__controls-list">
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-1.jpg" class="slider-product__controls-list__item__img"/></li>
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-2.jpg" class="slider-product__controls-list__item__img"/></li>
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-3.jpg" class="slider-product__controls-list__item__img"/></li>
+                                    </ul>
+                                  </div>
+                                  <div class="card-product__article article-product"><span class="article-product__text">Артикул</span><span class="article-product__value">954222</span></div>
+                                </div>
+                                <div class="card-product__description description-product">
+                                  <h2 class="description-product__title">Samsung GT-I9301I GALAXY S 3</h2>
+                                  <p class="description-product__text">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...</p>
+                                  <div class="description-product__options options-product">
+                                    <ul class="options-product__list">
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Тип SIM-карт</span><span class="options-product__item__value">Micro-SIM</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Количество SIM-карт</span><span class="options-product__item__value">66</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Цвет</span><span class="options-product__item__value">Белый</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">ОС</span><span class="options-product__item__value">Android</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Связь 3G</span><span class="options-product__item__value">Есть</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">4G(LTE)</span><span class="options-product__item__value">Нет</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">GPS-модуль</span><span class="options-product__item__value">Micro-SIM</span></div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="description-product__rating">
+                                    <ul class="description-product__rating__list">
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item"><a href="#" class="description-product__rating__link"></a></li>
+                                    </ul><span class="description-product__rating__value">4</span>
+                                  </div>
+                                </div>
+                                <div class="card-product__purchase purchase-product clearfix">
+                                  <div class="purchase-product__price">11 289</div>
+                                  <div class="purchase-product__buy">
+                                    <input type="submit" value="В корзину" class="purchase-product__in-basket"/>
+                                    <div class="purchase-product__wrap-availability"><span class="purchase-product__availability">В наличии</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card-product clearfix">
+                                <div class="card-product__slider slider-product">
+                                  <div class="slider-product__wrap-main-img"><img src="img/phone-poster-1.jpg" class="slider-product__main-img"/></div>
+                                  <div class="slider-product__controls">
+                                    <ul class="slider-product__controls-list">
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-1.jpg" class="slider-product__controls-list__item__img"/></li>
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-2.jpg" class="slider-product__controls-list__item__img"/></li>
+                                      <li class="slider-product__controls-list__item"><img src="img/phone-poster-3.jpg" class="slider-product__controls-list__item__img"/></li>
+                                    </ul>
+                                  </div>
+                                  <div class="card-product__article article-product"><span class="article-product__text">Артикул</span><span class="article-product__value">732492</span></div>
+                                </div>
+                                <div class="card-product__description description-product">
+                                  <h2 class="description-product__title">Samsung</h2>
+                                  <p class="description-product__text">Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...</p>
+                                  <div class="description-product__options options-product">
+                                    <ul class="options-product__list">
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Тип SIM-карт</span><span class="options-product__item__value">Micro-SIM</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Количество SIM-карт</span><span class="options-product__item__value">66</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Цвет</span><span class="options-product__item__value">Белый</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">ОС</span><span class="options-product__item__value">Android</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">Связь 3G</span><span class="options-product__item__value">Есть</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">4G(LTE)</span><span class="options-product__item__value">Нет</span></div>
+                                      </li>
+                                      <li class="options-product__item">
+                                        <div class="options-product__item__inner clearfix"><span class="options-product__item__param">GPS-модуль</span><span class="options-product__item__value">Micro-SIM</span></div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="description-product__rating">
+                                    <ul class="description-product__rating__list">
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item description-product__rating__item_active"><a href="#" class="description-product__rating__link"></a></li>
+                                      <li class="description-product__rating__item"><a href="#" class="description-product__rating__link"></a></li>
+                                    </ul><span class="description-product__rating__value">4</span>
+                                  </div>
+                                </div>
+                                <div class="card-product__purchase purchase-product clearfix">
+                                  <div class="purchase-product__price">11 289</div>
+                                  <div class="purchase-product__buy">
+                                    <input type="submit" value="В корзину" class="purchase-product__in-basket"/>
+                                    <div class="purchase-product__wrap-availability"><span class="purchase-product__availability">В наличии</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+              <div class="pagination">
+                <ul class="pagination__list">
+                  <li class="pagination__item"><a href="#" class="pagination__link pagination__link_prev"><</a></li>
+                  <li class="pagination__item pagination__item_active"><a href="#" class="pagination__link pagination__link_number">1</a></li>
+                  <li class="pagination__item"><a href="#" class="pagination__link pagination__link_number">2</a></li>
+                  <li class="pagination__item"><a href="#" class="pagination__link pagination__link_number">3</a></li>
+                  <li class="pagination__item"><a href="#" class="pagination__link pagination__link_next">></a></li>
+                </ul>
+              </div>
+            </section>
+          </div>
+          <div class="important-info">
+            <div class="container clearfix">
+              <h2 class="important-info__title">Важная информация</h2>
+              <div class="important-info__inner">
+                <p class="important-info__text">Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки модели развития.</p>
+                <p class="important-info__text">Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Таким образом сложившаяся структура организации требуют определения и уточнения направлений прогрессивного развития. Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+                <p class="important-info__text">Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации. С другой стороны сложившаяся структура организации позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
+                <p class="important-info__text">Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки модели развития.</p>
+                <p class="important-info__text">Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Таким образом сложившаяся структура организации требуют определения и уточнения направлений прогрессивного развития. Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+                <p class="important-info__text">Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации. С другой стороны сложившаяся структура организации позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="g-footer">
+          <div class="container clearfix">
+            <div class="footer-logo"><a href="#" class="footer-logo__link"><img src="img/footer-logo.png" class="footer-logo__img"/><span class="footer-logo__text">Cooltech</span></a></div>
+            <div class="footer-right-column">
+              <div class="social-btn-large">
+                <ul class="social-btn-large__list">
+                  <li class="social-btn-large__item"><a href="#" class="social-btn-large__link facebook">facebook</a></li>
+                  <li class="social-btn-large__item"><a href="#" class="social-btn-large__link vk">vk</a></li>
+                  <li class="social-btn-large__item"><a href="#" class="social-btn-large__link twitter">twitter</a></li>
+                </ul>
+              </div>
+                            <nav class="footer-nav">
+                              <ul class="footer-nav__list">
+                                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Планшеты</a></li>
+                                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Мобильные телефоны</a></li>
+                                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Mp3 плееры</a></li>
+                                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Персональные компьютеры</a></li>
+                                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Ноутбуки</a></li>
+                                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Аксессуары</a></li>
+                                <li class="footer-nav__item"><a href="#" class="footer-nav__link">Бытовая техника</a></li>
+                              </ul>
+                            </nav>
+            </div>
+          </div>
+          <div class="copyright">
+            <div class="container"><span class="copyright__text">All rights reserved. 2015. no copy alowed</span></div>
+          </div>
+        </footer>
       </div>
     </div>
     <!-- vendor js-->

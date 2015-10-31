@@ -1,0 +1,15 @@
+mixin list-param(type, valText)
+	div(class = "list-params list-params_#{type}")
+		ul.list-params__list
+			-var items = valText
+			each item in items
+				li.list-params__item
+					label.list-params__label
+						if(type == "radio")
+							input(type = type name="radioVal").list-params__input-origin
+							div.list-params__input-fake
+							div.list-params__label-title= item
+						else
+							input(type = type).list-params__input-origin
+							div.list-params__input-fake
+							div.list-params__label-title= item

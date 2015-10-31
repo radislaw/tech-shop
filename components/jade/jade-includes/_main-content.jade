@@ -1,0 +1,71 @@
+section.g-mainer.container
+    div.container.clearfix
+        h1.page-title Мобильные телефоны
+        include _sidebar
+        aside.l-sidebar
+            mixin price-toggle(items)
+                nav.price-toggle
+                    ul.price-toggle__list
+                        each item, index in items
+                            li.price-toggle__item
+                                a(href="#" class= "price-toggle__link")= item
+            +price-toggle(["Флагманы", "Бюджетная линейка"])
+            include accordeon/accordeon
+
+        section.l-main-content
+            div.filters.clearfix
+                div.filter.filter-select
+                    span.filter__title Сортировать по
+                    select.filter__select
+                        option(value="price").filter__select__option по цене
+                        option(value="rating").filter__select__option по популярности
+
+            div.filter.filter-view
+                span.filter__title Вид каталога
+                ul.view-list
+                    li.view-list__item.view-list__item_detailed
+                        a(href="#").view-list__link
+                    li.view-list__item.view-list__item_tile
+                        a(href="#").view-list__link
+                    li.view-list__item.view-list__item_list
+                        a(href="#").view-list__link
+
+            include _cards-products
+            - var product1 = {mainImg:"phone-poster-1.jpg", controlImg:["phone-poster-1.jpg", "phone-poster-2.jpg", "phone-poster-3.jpg"], articleValue:"285633", title: "Samsung GT-I9301I GALAXY S 3", description: "Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...", price:"11 289"}
+            - var product2 = {mainImg:"phone-poster-1.jpg", controlImg:["phone-poster-1.jpg", "phone-poster-2.jpg", "phone-poster-3.jpg"], articleValue:"346789", title: "Samsung GT-I9301I GALAXY S 3", description: "Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...", price:"11 289"}
+            - var product3 = {mainImg:"phone-poster-1.jpg", controlImg:["phone-poster-1.jpg", "phone-poster-2.jpg", "phone-poster-3.jpg"], articleValue:"123478", title: "Samsung", description: "Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...", price:"11 289"}
+            - var product4 = {mainImg:"phone-poster-1.jpg", controlImg:["phone-poster-1.jpg", "phone-poster-2.jpg", "phone-poster-3.jpg"], articleValue:"132799", title: "Samsung", description: "Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...", price:"11 289"}
+            - var product5 = {mainImg:"phone-poster-1.jpg", controlImg:["phone-poster-1.jpg", "phone-poster-2.jpg", "phone-poster-3.jpg"], articleValue:"753468", title: "Samsung GT-I9301I GALAXY S 3", description: "Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...", price:"11 289"}
+            - var product6 = {mainImg:"phone-poster-1.jpg", controlImg:["phone-poster-1.jpg", "phone-poster-2.jpg", "phone-poster-3.jpg"], articleValue:"431264", title: "Samsung", description: "Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...", price:"11 289"}
+            - var product7 = {mainImg:"phone-poster-1.jpg", controlImg:["phone-poster-1.jpg", "phone-poster-2.jpg", "phone-poster-3.jpg"], articleValue:"317895", title: "Samsung", description: "Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...", price:"11 289"}
+            - var product8 = {mainImg:"phone-poster-1.jpg", controlImg:["phone-poster-1.jpg", "phone-poster-2.jpg", "phone-poster-3.jpg"], articleValue:"954222", title: "Samsung GT-I9301I GALAXY S 3", description: "Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...", price:"11 289"}
+            - var product9 = {mainImg:"phone-poster-1.jpg", controlImg:["phone-poster-1.jpg", "phone-poster-2.jpg", "phone-poster-3.jpg"], articleValue:"732492", title: "Samsung", description: "Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц...", price:"11 289"}
+
+            - var products = [product1, product2, product3, product4, product5, product6, product7, product8, product9]
+            +card-product(products)
+
+            div.pagination
+                ul.pagination__list
+                    li.pagination__item
+                        a(href="#").pagination__link.pagination__link_prev <
+                    li.pagination__item.pagination__item_active
+                        a(href="#").pagination__link.pagination__link_number 1
+                    li.pagination__item
+                        a(href="#").pagination__link.pagination__link_number 2
+                    li.pagination__item
+                        a(href="#").pagination__link.pagination__link_number 3
+                    li.pagination__item
+                        a(href="#").pagination__link.pagination__link_next >
+
+
+    div.important-info
+        div.container.clearfix
+            h2.important-info__title Важная информация
+            div.important-info__inner
+                p.important-info__text Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки модели развития.
+                p.important-info__text Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Таким образом сложившаяся структура организации требуют определения и уточнения направлений прогрессивного развития. Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации.
+                p.important-info__text Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации. С другой стороны сложившаяся структура организации позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.
+                p.important-info__text Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки модели развития.
+                p.important-info__text Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Таким образом сложившаяся структура организации требуют определения и уточнения направлений прогрессивного развития. Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации.
+                p.important-info__text Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации. С другой стороны сложившаяся структура организации позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.
+

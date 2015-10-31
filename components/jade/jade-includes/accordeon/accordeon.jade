@@ -1,0 +1,38 @@
+div.accordeon
+   ul.accordeon__list
+      li.accordeon__item
+         a.accordeon__trigger Наличие в магазинах
+         div.accordeon__item__toggle
+            include list-param
+            +list-param('radio', ["Во всех магазинах", "В ближайшем ко мне магазине"])
+      li.accordeon__item
+         a.accordeon__trigger Бренды
+         div.accordeon__item__toggle
+            include list-param
+            +list-param('checkbox', ["Lenovo", "Apple", "Samsung", "Asus", "Motorola"])
+
+            include reset-filters
+            +reset-filters('Сбросить фильтр')
+
+
+      li.accordeon__item
+         a.accordeon__trigger Цена
+         div.accordeon__item__toggle
+            include range-slider
+            +range-slider('0', '26000')
+
+      li.accordeon__item
+         a.accordeon__trigger Цвет
+         div.accordeon__item__toggle
+            include colorpicker
+            +colorpicker(["red", "gray", "black", "dark-blue", "red", "yellow", "orange", "green", "blue", "purple", "pink", "brown"])
+
+      li.accordeon__item
+         a.accordeon__trigger Операционные
+         div.accordeon__item__toggle
+            include list-param
+            +list-param('checkbox', ["Android", "iOS", "Windows Mobile", "Symbian", "Custom"])
+
+            include reset-filters
+            +reset-filters('Сбросить фильтр')
+               

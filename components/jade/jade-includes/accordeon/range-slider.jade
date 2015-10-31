@@ -1,0 +1,15 @@
+mixin range-slider(start, end)
+   div.range-slider
+      div.range-slider__wrap-fields.clearfix
+         div.range-slider__field.range-slider__field_start
+            span.range-slider__text от
+            input(type="text", value= start).range-slider__input
+         div.range-slider__field.range-slider__field_end
+            span.range-slider__text до
+            input(type="text", value= end).range-slider__input
+      div.range-slider__interval
+         div.range-slider__range
+         div.range-slider__caret_start-wrap.ui-slider-handle
+            div.range-slider__caret.range-slider__caret_start
+         div.range-slider__caret_end-wrap.ui-slider-handle
+            div.range-slider__caret.range-slider__caret_end

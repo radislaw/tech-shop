@@ -1,1 +1,26 @@
-footer.footer
+footer.g-footer
+    div.container.clearfix
+        div.footer-logo
+            a(href = "#").footer-logo__link
+                img(src = "img/footer-logo.png").footer-logo__img
+                span.footer-logo__text Cooltech
+        div.footer-right-column
+            div.social-btn-large
+                ul.social-btn-large__list
+                    li.social-btn-large__item
+                        a(href="#").social-btn-large__link.facebook facebook
+                    li.social-btn-large__item
+                        a(href="#").social-btn-large__link.vk vk
+                    li.social-btn-large__item
+                        a(href="#").social-btn-large__link.twitter twitter
+
+            mixin footer-nav(items)
+                nav.footer-nav
+                    ul.footer-nav__list
+                        each item in items
+                            li.footer-nav__item
+                                a(href="#").footer-nav__link= item
+            +footer-nav(["Планшеты", "Мобильные телефоны", "Mp3 плееры", "Персональные компьютеры", "Ноутбуки", "Аксессуары", "Бытовая техника"])
+    div.copyright
+        div.container
+            span.copyright__text All rights reserved. 2015. no copy alowed
