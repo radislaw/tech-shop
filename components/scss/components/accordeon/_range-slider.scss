@@ -1,0 +1,74 @@
+@import "../../utilities/_sprite";
+
+
+.range-slider__wrap-fields {
+    margin-bottom: 18px;
+}
+
+.range-slider__field_start {
+    float: left;
+}
+
+.range-slider__field_end {
+    float: right;
+}
+
+.range-slider__text {
+    color: #333;
+    font: 14px "open_sansregular", sans-serif;
+}
+
+.range-slider__input {
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 1px 1px 0 rgba(148, 148, 148, 0.43);
+    display: inline-block;
+    box-sizing: border-box;
+    width: 83px;
+    padding: 6px 8px;
+    margin-left: 15px;
+}
+
+.range-slider__interval {
+    height: 15px;
+    position: relative;
+}
+
+.range-slider__range {
+    height: 3px;
+    background: #dee1e4;
+}
+
+.ui-slider-range {
+    height: 3px;
+    background: #ff6600;
+    position: absolute;
+    top: 0;
+}
+
+
+.range-slider__caret_start-wrap {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+.range-slider__caret_end-wrap {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+.range-slider__caret {
+    position: absolute;
+    cursor: pointer;
+    @include get-sprite($map, caret)
+}
+
+.range-slider__caret_start {
+    left: -4px;
+}
+
+.range-slider__caret_end {
+    right: -1px;
+}

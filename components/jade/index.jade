@@ -17,13 +17,14 @@ html(lang="ru-RU")
         link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
         link(rel="icon", href="favicon.ico", type="image/x-icon")
         // vendor CSS
-        link(rel="stylesheet", href="bower/normalize-css/normalize.css")
+        link(rel="stylesheet", href="bower_components/normalize-css/normalize.css")
+        link(rel = "stylesheet" href = "bower_components/select2/dist/css/select2.min.css")
         // fonts CSS
-        link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:100,400,600,700&subset=latin,cyrillic')
+        link(rel = "stylesheet" href = "fonts/opensans.css")
         // custom CSS
         link(rel="stylesheet", href="css/main.css")
         // header js
-        script(src="bower/modernizr/modernizr.js")
+        script(src = "bower_components/modernizr/modernizr.js")
     body
         <!--[if lt IE 8]>
         <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
@@ -43,9 +44,8 @@ html(lang="ru-RU")
                 include jade-includes/_footer
 
         // vendor js
-        script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
-        script.
-            window.jQuery || document.write('<script src="/js/_vendors/jquery-1.11.3.min.js"><\/script>');
+        script(src = "bower_components/jquery/jquery.min.js")
+        script(src = "bower_components/jquery-ui/jquery-ui.min.js")
+        script(src = "js/jquery.columnizer.js")
         // custom js
-        script(src='js/plugins.min.js')
-        script(src="js/main.js")
+        script(src = "js/script.js")

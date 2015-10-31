@@ -1,0 +1,28 @@
+.helper {
+    float: right;
+    margin-top: 5px;
+    margin-left: 16px;
+}
+
+.helper__list {
+    font-size:0;
+    margin: 0;
+    padding: 0;
+}
+
+.helper__item {
+    display: inline-block;
+    margin-left: 33px;
+
+}
+
+.helper__link {
+    color: #333;
+    display: block;
+    text-decoration: underline;
+    font: 16px "open_sanssemibold", sans-serif;
+    
+    &:hover {
+        color: #ff6600;
+    }
+}

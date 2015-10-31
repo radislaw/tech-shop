@@ -1,0 +1,19 @@
+@import "../utilities/_sprite";
+
+.location {
+    display: block;
+    color: #333333;
+    float: right;
+    font: 14px/24px "open_sansregular", sans-serif;
+    margin-left: 20px;
+    position: relative;
+
+    &:after {
+        display: inline-block;
+        content: "";
+        position: absolute;
+        left: -16px;
+        top: 5px;
+        @include get-sprite($map, map-pin)
+    }
+}

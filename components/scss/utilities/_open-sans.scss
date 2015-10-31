@@ -1,0 +1,22 @@
+$open-sans: (
+	"italic",
+	"light",
+	"bold",
+	"regular"
+);
+
+
+@each $style in $open-sans {
+	@font-face {
+		font-family: "open_sans#{$style}";
+		font-weight: normal;
+		font-style: normal;
+
+		src: url("opensans-#{$style}.eot?#iefix") format("embed-opentype"),
+		url("opensans-#{$style}.woff2") format("woff2"),
+		url("opensans-#{$style}.woff") format("woff"),
+		url("opensans-#{$style}.ttf") format("ttf"),
+		url("opensans-#{$style}.svg#open_sans#{$style}") format("svg");
+		src: url("opensans-#{$style}.eot");
+	}
+}

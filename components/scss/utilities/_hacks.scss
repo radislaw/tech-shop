@@ -1,0 +1,28 @@
+.justifer {
+  text-align: center;
+  font-size: 0;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  > * {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+
+  content: '';
+}
+
+.clearfix:after {
+  clear: both;
+}

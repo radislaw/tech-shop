@@ -2,15 +2,6 @@ section.g-mainer.container
     div.container.clearfix
         h1.page-title Мобильные телефоны
         include _sidebar
-        aside.l-sidebar
-            mixin price-toggle(items)
-                nav.price-toggle
-                    ul.price-toggle__list
-                        each item, index in items
-                            li.price-toggle__item
-                                a(href="#" class= "price-toggle__link")= item
-            +price-toggle(["Флагманы", "Бюджетная линейка"])
-            include accordeon/accordeon
 
         section.l-main-content
             div.filters.clearfix

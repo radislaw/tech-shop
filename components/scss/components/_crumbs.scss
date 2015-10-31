@@ -1,0 +1,44 @@
+.crumbs-panel {
+    margin-bottom: 23px !important;
+}
+
+.crumbs {
+    float: left;
+}
+
+.crumbs__list {
+    font-size: 0;
+    margin-left: -16px;
+    padding: 0;
+}
+
+.crumbs__item {
+    display: inline-block;
+    margin-left: 16px;
+    position: relative;
+
+    &:after {
+        content: ">";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: -12px;
+        font: 14px/20px "open_sansregular", sans-serif;
+    }
+
+    &:last-child:after {
+        content: "";
+    }
+}
+
+.crumbs__link {
+    color: #333;
+    font: 14px/20px "open_sansregular", sans-serif;
+    display: block;
+    text-decoration: none;
+    
+    &:hover {
+        color: #ff6600;
+        text-decoration: underline;
+    }
+}

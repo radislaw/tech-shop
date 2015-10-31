@@ -1,0 +1,43 @@
+@import "../utilities/_sprite";
+
+.social-btn-large__list {
+    padding: 0;
+    margin: 0;
+    margin-left: -15px;
+    padding-right: 5px;
+}
+
+$socials-large: facebook, vk, twitter;
+
+.social-btn-large {
+    font-size: 0;
+    margin-bottom: 35px;
+    display: block;
+
+    @each $social in $socials-large {
+        .#{$social} {
+            @include get-sprite($map, $social + "-large")
+        }
+    }
+}
+
+.social-btn-large {
+
+    @each $social in $socials-large {
+        .#{$social}:hover {
+            @include get-sprite($map, $social + "-large-hover")
+        }
+    }
+}
+
+.social-btn-large__item {
+    list-style: none;
+    display: inline-block;
+    margin-left: 26px;
+}
+
+.social-btn-large__link{
+    display: block;
+}
+
+//

@@ -1,0 +1,22 @@
+@import "../utilities/_sprite";
+
+.phone {
+    float: right;
+    margin-left: 109px;
+}
+
+.phone__link {
+    color: #333;
+    font: 18px/24px "open_sanssemibold", sans-serif;
+    text-decoration: none;
+    position: relative;
+
+    &:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: -24px;
+        top: 4px;
+        @include get-sprite($map, phone)
+    }
+}

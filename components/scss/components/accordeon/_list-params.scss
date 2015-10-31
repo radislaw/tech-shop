@@ -1,0 +1,62 @@
+@import "../../utilities/_sprite";
+
+.list-params__list {
+    margin: 0;
+    padding: 0;
+}
+
+.list-params__item {
+    list-style: none;
+    margin-bottom: 18px;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.list-params__label {
+    position: relative;
+    padding-left: 29px;
+    cursor: pointer;
+}
+
+.list-params__input-origin {
+    position: absolute;
+    top: 0;
+    left:-9999px;
+}
+
+.list-params__input-fake {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+}
+
+.list-params__label-title {
+    display: inline-block;
+    color: #333;
+    font: 14px "open_sansregular", sans-serif;
+}
+
+.list-params_radio {
+    .list-params__input-origin + .list-params__input-fake {
+        @include get-sprite($map, radio-off)
+    }
+
+    .list-params__input-origin:checked + .list-params__input-fake {
+        @include get-sprite($map, radio-on)
+    }
+}
+
+.list-params_checkbox {
+
+    .list-params__input-origin + .list-params__input-fake {
+        @include get-sprite($map, check-off)
+    }
+
+    .list-params__input-origin:checked + .list-params__input-fake {
+        @include get-sprite($map, check-on)
+    }
+}
+
+

@@ -18,13 +18,14 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
     <!-- vendor CSS-->
-    <link rel="stylesheet" href="bower/normalize-css/normalize.css"/>
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css"/>
+    <link rel="stylesheet" href="bower_components/select2/dist/css/select2.min.css"/>
     <!-- fonts CSS-->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,400,600,700&amp;subset=latin,cyrillic"/>
+    <link rel="stylesheet" href="fonts/opensans.css"/>
     <!-- custom CSS-->
     <link rel="stylesheet" href="css/main.css"/>
     <!-- header js-->
-    <script src="bower/modernizr/modernizr.js"></script>
+    <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
     <!--[if lt IE 8]>
@@ -211,170 +212,7 @@
                                             </div>
                     </div>
                   </li>
-                  <li class="accordeon__item"><a class="accordeon__trigger">Операционные</a>
-                    <div class="accordeon__item__toggle">
-                                            <div class="list-params list-params_checkbox">
-                                              <ul class="list-params__list">
-                                                <li class="list-params__item">
-                                                  <label class="list-params__label">
-                                                    <input type="checkbox" class="list-params__input-origin"/>
-                                                    <div class="list-params__input-fake"></div>
-                                                    <div class="list-params__label-title">Android</div>
-                                                  </label>
-                                                </li>
-                                                <li class="list-params__item">
-                                                  <label class="list-params__label">
-                                                    <input type="checkbox" class="list-params__input-origin"/>
-                                                    <div class="list-params__input-fake"></div>
-                                                    <div class="list-params__label-title">iOS</div>
-                                                  </label>
-                                                </li>
-                                                <li class="list-params__item">
-                                                  <label class="list-params__label">
-                                                    <input type="checkbox" class="list-params__input-origin"/>
-                                                    <div class="list-params__input-fake"></div>
-                                                    <div class="list-params__label-title">Windows Mobile</div>
-                                                  </label>
-                                                </li>
-                                                <li class="list-params__item">
-                                                  <label class="list-params__label">
-                                                    <input type="checkbox" class="list-params__input-origin"/>
-                                                    <div class="list-params__input-fake"></div>
-                                                    <div class="list-params__label-title">Symbian</div>
-                                                  </label>
-                                                </li>
-                                                <li class="list-params__item">
-                                                  <label class="list-params__label">
-                                                    <input type="checkbox" class="list-params__input-origin"/>
-                                                    <div class="list-params__input-fake"></div>
-                                                    <div class="list-params__label-title">Custom</div>
-                                                  </label>
-                                                </li>
-                                              </ul>
-                                            </div><a class="reset-filter">Сбросить фильтр</a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </aside>
-            <aside class="l-sidebar">
-                            <nav class="price-toggle">
-                              <ul class="price-toggle__list">
-                                <li class="price-toggle__item"><a href="#" class="price-toggle__link">Флагманы</a></li>
-                                <li class="price-toggle__item"><a href="#" class="price-toggle__link">Бюджетная линейка</a></li>
-                              </ul>
-                            </nav>
-              <div class="accordeon">
-                <ul class="accordeon__list">
-                  <li class="accordeon__item"><a class="accordeon__trigger">Наличие в магазинах</a>
-                    <div class="accordeon__item__toggle">
-                                            <div class="list-params list-params_radio">
-                                              <ul class="list-params__list">
-                                                <li class="list-params__item">
-                                                  <label class="list-params__label">
-                                                    <input type="radio" name="radioVal" class="list-params__input-origin"/>
-                                                    <div class="list-params__input-fake"></div>
-                                                    <div class="list-params__label-title">Во всех магазинах</div>
-                                                  </label>
-                                                </li>
-                                                <li class="list-params__item">
-                                                  <label class="list-params__label">
-                                                    <input type="radio" name="radioVal" class="list-params__input-origin"/>
-                                                    <div class="list-params__input-fake"></div>
-                                                    <div class="list-params__label-title">В ближайшем ко мне магазине</div>
-                                                  </label>
-                                                </li>
-                                              </ul>
-                                            </div>
-                    </div>
-                  </li>
-                  <li class="accordeon__item"><a class="accordeon__trigger">Бренды</a>
-                    <div class="accordeon__item__toggle">
-                                            <div class="list-params list-params_checkbox">
-                                              <ul class="list-params__list">
-                                                <li class="list-params__item">
-                                                  <label class="list-params__label">
-                                                    <input type="checkbox" class="list-params__input-origin"/>
-                                                    <div class="list-params__input-fake"></div>
-                                                    <div class="list-params__label-title">Lenovo</div>
-                                                  </label>
-                                                </li>
-                                                <li class="list-params__item">
-                                                  <label class="list-params__label">
-                                                    <input type="checkbox" class="list-params__input-origin"/>
-                                                    <div class="list-params__input-fake"></div>
-                                                    <div class="list-params__label-title">Apple</div>
-                                                  </label>
-                                                </li>
-                                                <li class="list-params__item">
-                                                  <label class="list-params__label">
-                                                    <input type="checkbox" class="list-params__input-origin"/>
-                                                    <div class="list-params__input-fake"></div>
-                                                    <div class="list-params__label-title">Samsung</div>
-                                                  </label>
-                                                </li>
-                                                <li class="list-params__item">
-                                                  <label class="list-params__label">
-                                                    <input type="checkbox" class="list-params__input-origin"/>
-                                                    <div class="list-params__input-fake"></div>
-                                                    <div class="list-params__label-title">Asus</div>
-                                                  </label>
-                                                </li>
-                                                <li class="list-params__item">
-                                                  <label class="list-params__label">
-                                                    <input type="checkbox" class="list-params__input-origin"/>
-                                                    <div class="list-params__input-fake"></div>
-                                                    <div class="list-params__label-title">Motorola</div>
-                                                  </label>
-                                                </li>
-                                              </ul>
-                                            </div><a class="reset-filter">Сбросить фильтр</a>
-                    </div>
-                  </li>
-                  <li class="accordeon__item"><a class="accordeon__trigger">Цена</a>
-                    <div class="accordeon__item__toggle">
-                                            <div class="range-slider">
-                                              <div class="range-slider__wrap-fields clearfix">
-                                                <div class="range-slider__field range-slider__field_start"><span class="range-slider__text">от</span>
-                                                  <input type="text" value="0" class="range-slider__input"/>
-                                                </div>
-                                                <div class="range-slider__field range-slider__field_end"><span class="range-slider__text">до</span>
-                                                  <input type="text" value="26000" class="range-slider__input"/>
-                                                </div>
-                                              </div>
-                                              <div class="range-slider__interval">
-                                                <div class="range-slider__range"></div>
-                                                <div class="range-slider__caret_start-wrap ui-slider-handle">
-                                                  <div class="range-slider__caret range-slider__caret_start"></div>
-                                                </div>
-                                                <div class="range-slider__caret_end-wrap ui-slider-handle">
-                                                  <div class="range-slider__caret range-slider__caret_end"></div>
-                                                </div>
-                                              </div>
-                                            </div>
-                    </div>
-                  </li>
-                  <li class="accordeon__item"><a class="accordeon__trigger">Цвет</a>
-                    <div class="accordeon__item__toggle">
-                                            <div class="colorpicker">
-                                              <ul class="colorpicker__list">
-                                                <li class="colorpicker__item"><a href="#" data-color="red" class="colorpicker__link"></a></li>
-                                                <li class="colorpicker__item"><a href="#" data-color="gray" class="colorpicker__link"></a></li>
-                                                <li class="colorpicker__item"><a href="#" data-color="black" class="colorpicker__link"></a></li>
-                                                <li class="colorpicker__item"><a href="#" data-color="dark-blue" class="colorpicker__link"></a></li>
-                                                <li class="colorpicker__item"><a href="#" data-color="red" class="colorpicker__link"></a></li>
-                                                <li class="colorpicker__item"><a href="#" data-color="yellow" class="colorpicker__link"></a></li>
-                                                <li class="colorpicker__item"><a href="#" data-color="orange" class="colorpicker__link"></a></li>
-                                                <li class="colorpicker__item"><a href="#" data-color="green" class="colorpicker__link"></a></li>
-                                                <li class="colorpicker__item"><a href="#" data-color="blue" class="colorpicker__link"></a></li>
-                                                <li class="colorpicker__item"><a href="#" data-color="purple" class="colorpicker__link"></a></li>
-                                                <li class="colorpicker__item"><a href="#" data-color="pink" class="colorpicker__link"></a></li>
-                                                <li class="colorpicker__item"><a href="#" data-color="brown" class="colorpicker__link"></a></li>
-                                              </ul>
-                                            </div>
-                    </div>
-                  </li>
-                  <li class="accordeon__item"><a class="accordeon__trigger">Операционные</a>
+                  <li class="accordeon__item"><a class="accordeon__trigger">Операционные системы</a>
                     <div class="accordeon__item__toggle">
                                             <div class="list-params list-params_checkbox">
                                               <ul class="list-params__list">
@@ -1016,10 +854,10 @@
       </div>
     </div>
     <!-- vendor js-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/js/_vendors/jquery-1.11.3.min.js"><\/script>');</script>
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script src="js/jquery.columnizer.js"></script>
     <!-- custom js-->
-    <script src="js/plugins.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

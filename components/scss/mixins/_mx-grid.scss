@@ -1,0 +1,117 @@
+@import "../utilities/_variables";
+
+@mixin percent($width-child, $width-parent) {
+	width: ($width-child * 100%) / $width-parent;
+}
+
+@mixin min($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media only screen and (min-width: #{map-get($breakpoints, $breakpoint)}) {
+			@content;
+		}
+	} @else if $breakpoint == xs {
+		@content;
+	} @else {
+		@media only screen and (min-width: $breakpoint) {
+			@content;
+		}
+	}
+}
+
+@mixin max($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media only screen and (max-width: #{map-get($breakpoints, $breakpoint)}) {
+			@content;
+		}
+	} @else if $breakpoint == xs {
+		@content;
+	} @else {
+		@media only screen and (max-width: $breakpoint) {
+			@content;
+		}
+	}
+}
+
+@mixin only($breakpoint-min, $breakpoint-max) {
+	@if $breakpoint-min == xs {
+		@media only screen and (max-width: $sm - 1) {
+			@content;
+		}
+	} @else if map-has-key($breakpoints, $breakpoint-min) {
+		@if $breakpoint-min == sm {
+			@if $breakpoint-max == 0 {
+				@media only screen and (min-width: $sm) and (max-width: $md - 1) {
+					@content;
+				}
+			} @else {
+				@media only screen and (min-width: $sm) and (max-width: $breakpoint-max) {
+					@content;
+				}
+			}
+		} @else if $breakpoint-min == md {
+			@if $breakpoint-max == 0 {
+				@media only screen and (min-width: $md) and (max-width: $lg - 1) {
+					@content;
+				}
+			} @else {
+				@media only screen and (min-width: $md) and (max-width: $breakpoint-max) {
+					@content;
+				}
+			}
+		} @else if $breakpoint-min == lg {
+			@if $breakpoint-max == 0 {
+				@media only screen and (min-width: $lg) {
+					@content;
+				}
+			} @else {
+				@media only screen and (min-width: $lg) and (max-width: $breakpoint-max) {
+					@content;
+				}
+			}
+		}
+	}
+}
+
+@mixin response($prop, $xs, $sm, $md, $lg) {
+	@if $xs != 0 {
+		#{$prop}: $xs;
+	}
+
+	@if $sm != 0 {
+		@include min(sm) {
+			#{$prop}: $sm;
+		}
+	}
+
+	@if $md != 0 {
+		@include min(md) {
+			#{$prop}: $md;
+		}
+	}
+
+	@if $lg != 0 {
+		@include min(lg) {
+			#{$prop}: $lg;
+		}
+	}
+}
+
+
+@mixin grid($width-screen, $width-block) {
+	@if map-has-key($breakpoints, $width-screen) {
+		@if $width-screen == xs {
+			width: (100% / $columns) * $width-block;
+		} @else {
+			@include min($width-screen) {
+				width: (100% / $columns) * $width-block;
+			}
+		}
+	} @else {
+		width: (100% / $columns) * $width-block;
+	}
+}
+
+
+
+
+

@@ -1,0 +1,22 @@
+@mixin font ($font, $font-size, $line-height:null) {
+    @if $line-height == null {
+        font: $font-size + rem map-values($font);
+    }@else {
+        font: $font-size + rem  + "/" + $line-height + rem map-values($font);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

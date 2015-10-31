@@ -1,0 +1,50 @@
+@import "../utilities/_variables";
+@import "../mixins/_mixins";
+
+
+html,
+body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.page-body {
+	margin: 0;
+	margin-bottom: -$height-footer-xs;
+	padding: 0 0 $height-footer-xs;
+
+	@if $height-footer-sm != $height-footer-xs {
+		@include min(sm) {
+			margin-bottom: -$height-footer-sm;
+			padding-bottom: $height-footer-sm;
+		}
+	}
+	@if $height-footer-md != $height-footer-sm {
+		@include min(md) {
+			margin-bottom: -$height-footer-md;
+			padding-bottom: $height-footer-md;
+		}
+	}
+	@if $height-footer-lg != $height-footer-md {
+		@include min(lg) {
+			margin-bottom: -$height-footer-lg;
+			padding-bottom: $height-footer-lg;
+		}
+	}
+
+	min-height: 100%;
+}
+
+* html .page-body {
+	height: 100%;
+}
+
+@import "page-body";
+@import "page-width";
+@import "g-header";
+@import "g-mainer";
+@import "g-footer";
+
+@import "l-sidebar";
+@import "l-main-content";

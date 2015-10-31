@@ -1,0 +1,22 @@
+// Grid
+$height-footer-xs: 220px;
+$height-footer-sm: 220px;
+$height-footer-md: 220px;
+$height-footer-lg: 220px;
+
+$columns: 12;
+$page-width: 960px;
+
+$xs: 480px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+
+$breakpoints: (
+		xs: $xs,
+		sm: $sm,
+		md: $md,
+		lg: $lg
+);
+
+$path-to-img: "../img/";

@@ -1,0 +1,23 @@
+@import "mx-funcrion";
+@import "mx-fonts";
+@import "mx-grid";
+@import "mx-sprite";
+
+
+@mixin placecolor($color: #000000) {
+	&::-webkit-input-placeholder {
+		color: $color;
+	}
+	&:-moz-placeholder {
+		color: $color;
+	}
+	&::-moz-placeholder {
+		color: $color;
+	}
+	&:-ms-input-placeholder {
+		color: $color;
+	}
+}
+
+
+

@@ -1,0 +1,71 @@
+@import "../../utilities/_sprite";
+
+.accordeon {
+    background: #fbfbfb;
+    box-sizing: border-box;
+    border: 1px solid #dee1e4;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.accordeon__list {
+    margin: 0;
+    padding: 0;
+}
+
+.accordeon__item {
+    list-style: none;
+    padding: 11px 28px 20px;
+    border-bottom: 1px solid #dee1e4;
+}
+
+
+.accordeon__trigger {
+    display: block;
+    color: #333;
+    font: 16px "open_sanssemibold", sans-serif;
+    text-decoration: none;
+    margin-bottom: 15px;
+    cursor: pointer;
+    position: relative;
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        @include get-sprite($map, accorderon-arrow-up)
+    }
+}
+
+
+
+.show-widget{
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        opacity: .2;
+        @include get-sprite($map, accorderon-arrow-down)
+    }
+}
+
+.show-widget:hover:after {
+    opacity: 1;
+}
+.hide-margin{
+    margin-bottom: 0;
+    -webkit-transition: margin .3s;
+    -moz-transition: margin .3s;
+    -ms-transition: margin .3s;
+    -o-transition: margin .3s;
+    transition: margin .3s;
+}
+
+@import "list-params";
+@import "reset-filters";
+@import "range-slider";
+@import "colorpicker";

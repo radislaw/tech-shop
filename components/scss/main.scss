@@ -1,0 +1,96 @@
+@import "compass";
+
+///
+@import "utilities/_custom-reset";
+@import "utilities/_hacks";
+@import "utilities/_variables";
+@import "mixins/_mixins";
+@import "utilities/_sprite";
+@import "utilities/_fonts";
+@import "grid/_grid";
+
+@import "components/_social-btn";
+@import "components/_location";
+@import "components/_phone";
+@import "components/_logo";
+@import "components/_search";
+@import "components/_helper";
+@import "components/_navigation";
+@import "components/_crumbs";
+
+@import "components/_price-toggle";
+@import "components/accordeon/accordeon";
+@import "components/_cards-products";
+@import "components/_pagination";
+@import "components/_important-info";
+
+@import "components/_footer-logo";
+@import "components/_social-btn-large";
+@import "components/_footer-navigation";
+@import "components/_copyright";
+
+
+body {
+	background: #f4f4f4;
+}
+
+.main-wrap {
+	min-width: 1200px;
+}
+
+.container {
+	width: 1100px;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+.contacts-panel{
+	background: #fff;
+	border-bottom: 2px solid #ebedef;
+	padding: 25px 0 26px;
+	margin-bottom: 10px;
+}
+
+.logo-panel {
+	padding: 20px 0 17px;
+}
+
+
+.page-title {
+	color: #333;
+	text-align: left;
+	margin: 0;
+	font: 20px/1 "open_sansbold", sans-serif;
+	margin-bottom: 31px;
+}
+
+.l-sidebar{
+	float: left;
+	width: 333px;
+}
+
+.l-main-content {
+	float: right;
+	width: 743px;
+	margin-bottom: 10px;
+}
+
+.g-mainer {
+	margin-bottom: 29px;
+}
+
+.g-footer {
+	background: url("../img/bg-footer.jpg") center;
+	height: 220px;
+	position: relative;
+}
+
+.footer-right-column {
+	float: right;
+	text-align: right;
+	padding-top: 35px;
+	width: 560px;
+}
+
+

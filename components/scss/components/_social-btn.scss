@@ -1,0 +1,39 @@
+@import "../utilities/_sprite";
+
+.social-btn__list {
+    padding: 0;
+    margin: 0;
+    margin-left: -15px;
+}
+
+$socials: facebook, vk, twitter;
+
+.social-btn {
+    float: left;
+    font-size: 0;
+
+    @each $social in $socials {
+        .#{$social} {
+            @include get-sprite($map, $social)
+        }
+    }
+}
+
+
+.social-btn {
+    @each $social in $socials {
+        .#{$social}:hover {
+            @include get-sprite($map, $social + "-hover")
+        }
+    }
+}
+
+.social-btn__item {
+    list-style: none;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.social-btn__link{
+    display: block;
+}

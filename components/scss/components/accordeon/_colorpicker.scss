@@ -1,0 +1,25 @@
+.colorpicker__list {
+    padding: 0;
+    margin-left: -22px;
+    font-size: 0;
+    padding-right: 60px;
+}
+
+.colorpicker__item {
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 22px 22px;
+}
+
+.colorpicker__link {
+    border: 1px solid #dee1e4;
+    background: darkcyan;
+    display: block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.colorpicker__link:hover {
+    box-shadow: 0 0 0 2px  #ff6600;
+}

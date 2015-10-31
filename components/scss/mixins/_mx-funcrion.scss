@@ -1,0 +1,23 @@
+//Reverse all in string
+@function to-string($value) {
+	@return inspect($value);
+}
+
+@mixin sprite($top, $left) {
+	background: url("../images/sprite.png") no-repeat $top + px $left + px;
+}
+
+
+@function map-nth-key($map, $num-key) {
+	$key-value: nth($map, $num-key);
+	$key-value-string: to-string($key-value);
+	$pos-space: str-index($key-value-string, " ");
+	@return str-slice($key-value-string, 1, $pos-space - 1);
+}
+
+@function map-nth-value($map, $num-value) {
+	$key-value: nth($map, $num-value);
+	$key-value-string: to-string($key-value);
+	$pos-space: str-index($key-value-string, " ");
+	@return str-slice($key-value-string, $pos-space + 1, 999);
+}
