@@ -1,4 +1,5 @@
-//***************************Accordeon toggle************************
+// Аккордеон
+
 var accordeonToggle = (function() {
 
 	var init = function(){
@@ -60,10 +61,9 @@ var accordeonToggle = (function() {
 
 })();
 
-accordeonToggle.init();
-//*******************************************************************
 
-// **********************Rest filters********************************
+// Фильтры
+
 var resetFilter = (function(){
 
 	var init = function(){
@@ -98,11 +98,8 @@ var resetFilter = (function(){
 
 })();
 
-resetFilter.init();
-//*******************************************************************
 
-
-//************************ColorPicker*********************************
+// Цвета
 
 var setColorPicker = (function(){
 	var init = function(){
@@ -135,10 +132,9 @@ var setColorPicker = (function(){
 	};
 })();
 
-setColorPicker.init();
-//*******************************************************************
 
-//*************************rangePrice********************************
+// Цена
+
 var rangePrice = (function(){
 	var init = function(){
 		_setUpListners();
@@ -189,10 +185,8 @@ var rangePrice = (function(){
 	};
 })();
 
-rangePrice.init();
-//*******************************************************************
 
-//********************Change view************************************
+// Вид каталога
 
 var changeView = (function(){
 	var init = function(){
@@ -267,10 +261,9 @@ var changeView = (function(){
 	};
 })();
 
-changeView.init();
-//*******************************************************************
 
-//********************setColumn**************************************
+// Колонки
+
 var setColumn = (function(){
 	var init = function(){
 		_setUpListners();
@@ -291,10 +284,9 @@ var setColumn = (function(){
 	};
 })();
 
-setColumn.init();
-//*******************************************************************
 
-//**********************sliderPoster*********************************
+// Слайдер
+
 var sliderPoster = (function(){
 
 	var init = function(){
@@ -346,10 +338,8 @@ var sliderPoster = (function(){
 
 })();
 
-sliderPoster.init();
-//*******************************************************************
 
-//********************Select*****************************************
+// Селект
 
 var setSelect = (function(){
 	var init = function(){
@@ -445,6 +435,21 @@ var setSelect = (function(){
 	};
 })();
 
-setSelect.init();
 
-//*******************************************************************
+// Инициализация модулей
+
+accordeonToggle.init();
+
+resetFilter.init();
+
+setColorPicker.init();
+
+rangePrice.init();
+
+changeView.init();
+
+setColumn.init();
+
+sliderPoster.init();
+
+setSelect.init();
